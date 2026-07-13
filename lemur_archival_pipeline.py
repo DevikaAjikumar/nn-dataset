@@ -66,7 +66,7 @@ from ab.nn.util.hf.DB_from_HF import repo_id as HF_REPO_ID  # noqa: E402
 # Versioned compressed filename, e.g. db/ab.nn.zst-2.2.9 (version comes from the
 # project's `version` file via add_version()).
 DB_ZST = DB_PATH.parent / add_version("ab.nn.zst")
-
+python analyze_db_models.py
 HF_TOKEN = os.environ.get("HF_TOKEN")  # or pass --HF_TOKEN on the command line
 
 
